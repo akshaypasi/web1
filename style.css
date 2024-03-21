@@ -1,0 +1,155 @@
+.hover {
+  border-radius: 50%;
+  background: slateblue;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.hover:hover {
+  transform: translateY(-25px);
+}
+
+.image {
+  transition: transform .5s;
+  color: aqua;
+}
+
+.panel-body:hover .image {
+  transform: scale(1.5);
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f093fb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+nav ul li a {
+  font-weight: 800;
+  margin: 0 10px;
+}
+/* a:hover {
+  background-color: #0f5ef1;
+} */
+.bgimg{
+  background-image: url('img/bg3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#loading{
+  background-color: #1a63c3;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;       
+  margin-top: 0px;
+  top: 0px;
+}
+#loading-center{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+#object{
+  width: 80px;
+  height: 80px;
+  background-color: rgb(174, 120, 120);
+  -webkit-animation: animate 1s infinite ease-in-out;
+  animation: animate 1s infinite ease-in-out;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+}
+@-webkit-keyframes animate {
+0% { -webkit-transform: perspective(160px); }
+50% { -webkit-transform: perspective(160px) rotateY(-180deg); }
+100% { -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg); }
+}
+@keyframes animate {
+0% {
+  transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+  -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+} 50% {
+  transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+  -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg) ;
+} 100% {
+  transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+  -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+}
+}
+
+/* netflix */
+.logo{
+  background-color: red;
+  color: white;
+  border: none; 
+}
+.bg{
+  background-image: url('img/nbg.jpg');
+  background-color: black;
+}
+.heading1{
+  text-align: center;
+  padding-top: 5%;
+  color: white;
+}
+.heading2{
+  font-size: 4.5rem;
+}
+.heading3{
+  font-size: 30px;
+}
+.heading4 h4{
+  padding-top: 20px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
